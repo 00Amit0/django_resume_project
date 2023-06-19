@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="mt-5">
+        <div class="text-center">
+            <img src="{% static 'core/images/amit.JPG' %}" alt="ProfilePic" class="img-thumbnail" width="250px" height="150px">
+        </div>
+        <div class="mt-5 text-white mx-5 text-justify">
+            <h1 class="font-weight-bold st-font">Hello,</h1>
+            <div class="px-4" style="line-height:2rem;">
+                <p style="text-indent:100px;">
+                    I am a software developer specializing in web development and backend. With my expertise, I create efficient and user-friendly applications that meet the needs of clients. I am passionate about coding and constantly learning new technologies to enhance my skills. I love tackling challenging problems and finding innovative solutions. Feel free to explore my portfolio and get in touch with me for any exciting projects!
+                </p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3" style="margin-right: 10px;">Hire Me</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+        </div>
+    </div>
+{% endblock content %}
